@@ -3,7 +3,7 @@ import joblib
 
 app = Flask(__name__)
 
-model = joblib.load('intraday_model.pkl')
+model = joblib.load('intraday_lstm_model.h5')
 
 @app.route('/predict', methods=['POST'])
 def predict():
