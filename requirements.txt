@@ -2,7 +2,7 @@ Flask==2.2.5
 numpy==1.24.3
 pandas==2.1.1
 tensorflow==2.13.0
-matplotlib==3.7.1
-yfinance==0.2.25
-scikit-learn==1.2.2
+h5py==3.14.0
+yfinance==0.2.22
 gunicorn==21.2.0
+scikit-learn==1.2.2
