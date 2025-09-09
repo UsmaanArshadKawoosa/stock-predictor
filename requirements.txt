@@ -1,5 +1,5 @@
 Flask==2.2.5
 numpy==1.26.0
 pandas==2.1.1
-scikit-learn==1.2.2
+tensorflow==2.13.0
 gunicorn==21.2.0
