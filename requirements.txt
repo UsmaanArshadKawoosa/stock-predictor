@@ -6,4 +6,5 @@ h5py==3.14.0
 yfinance==0.2.22
 gunicorn==21.2.0
 scikit-learn==1.2.2
-matplotlib
+matplotlib==3.7.2
+
