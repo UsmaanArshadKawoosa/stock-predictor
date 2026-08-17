@@ -12,11 +12,15 @@ app = Flask(__name__)
 # Load LSTM model
 model = load_model("intraday_new_lstm_model.h5", compile=False)
 
-# Load scaler if you have one
-try:
-    scaler = pickle.load(open("scaler.pkl", "rb"))
-except:
-    scaler = None
+# Load scaler if available. Try scaler.pkl first, then fall back to scaler.save
+scaler = None
+for _name in ("scaler.pkl", "scaler.save"):
+    try:
+        with open(_name, "rb") as f:
+            scaler = pickle.load(f)
+        break
+    except Exception:
+        scaler = None
 
 @app.route("/predict", methods=["POST"])
 def predict():
