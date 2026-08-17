@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+.venv/
+ENV/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Jupyter
+.ipynb_checkpoints
+
+# IDEs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# dotenv
+.env
+
+# pytest
+.pytest_cache/
+
+# mypy
+.mypy_cache/
+
+# caches
+.cache/
+
+# pickles and local artifacts (uncomment to ignore if you keep these locally):
+# *.pkl
+# *.save
+
+# NOTE: model artifacts (e.g., intraday_new_lstm_model.h5) are tracked in this repo and should not be ignored
