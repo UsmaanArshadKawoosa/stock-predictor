@@ -110,10 +110,3 @@ This repository does not contain reproducible numeric evaluation results. Only m
 - Add better API input validation and JSON responses (optionally return numeric prediction alongside the plot)
 - Consider packaging the app (Dockerfile) and secure configuration (do not commit secrets)
 
-## Author
-Repository: UsmaanArshadKawoosa/stock-predictor
-
-
----
-
-The app now loads `scaler.pkl` or falls back to `scaler.save` automatically; no additional action is required to use the bundled scaler.
